@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="mainContainer">
+    <h3 style="position: absolute; top: 40px">{{EndTextMessage}}</h3>
+    <h3 style="position: absolute; top: 70px">{{correctAnswers}}/52 Correct Answers</h3>
+    <h3 style="position: absolute; top: 100px">Flag {{AlreadyAnswered}}/52 </h3>
+    <h3 style="position: absolute; top: 130px">{{rightOrWrongText}}</h3>
+    <div class = "gameHolder">
+        <form action="/reset"  method="post">
+            <input type="image" class="imageSubmitButton" value="">
+        </form>
+
+        <div class="imageClass">
+         <div class="imageClassWrapper">
+            <img src="{{Flag}}" width="100%" height="100%" style="border-radius:20px">
+         </div>
+        </div>
+        <div class="buttonHolder">
+            <div class="buttonHolder1">
+            <form action="/button1"  method="post">
+            <input type="Submit" class="buttons" value="{{button1}}">
+            </form >
+            <form action="/button2"  method="post">
+            <input type="Submit" class="buttons" value="{{button2}}">
+            </form>
+            <form action="/button3"  method="post" >
+            <input type="Submit" class="buttons" value="{{button3}}">
+            </form>
+            <form action="/button4"  method="post">
+                <input type="Submit" class="buttons" value="{{button4}}">
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
